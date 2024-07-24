@@ -15,10 +15,10 @@ print("Open database successfully")
 cur = conn.cursor()
 
 # sql
-cur.execute("select * from output where c4 = 'CC_Chg' and c3 = 6 and c1%2 = 1;")
+cur.execute("select * from output where c3 = 6 and c8 is not null")
 rows = cur.fetchall()
 
-data = pd.DataFrame(rows, columns=['idx', 'loop', 'cycle', 'situation', 'time', 'voltage','1','2','3','4','5','6'])
+data = pd.DataFrame(rows, columns=['idx', 'loop', 'cycle', 'situation', 'time', 'voltage','Q','2','3','4','5','6'])
 
 print(rows)
 
@@ -26,7 +26,7 @@ conn.close()
 
 df = data
 
-x_data = df['idx'].values
+x_data = df['time'].values.astype(float)
 y_data = df['voltage'].values
 
 # 使用线性插值
@@ -38,16 +38,16 @@ y_interp = f(x_interp)  # 使用插值函数计算对应的y值
 plt.figure(figsize=(10, 6))
 
 # 绘制原始数据点
-plt.scatter(x_data, y_data, color='blue', label='Data Points')
+# plt.scatter(x_data, y_data, color='blue', label='Data Points')
 
 # 绘制插值曲线
-plt.plot(x_interp, y_interp, color='green', label='Interpolated Curve')
+# plt.plot(x_interp, y_interp, color='green', label='Interpolated Curve')
 
 # 计算微分方程的曲线
 y_diff = df_dx(x_interp)
 plt.plot(x_interp, y_diff, color='red', label='Differentiated Curve')
 
-plt.xlabel('dQ')
+plt.xlabel('Q')
 plt.ylabel('dV')
 plt.title('Differential Voltage Curve')
 plt.legend()
