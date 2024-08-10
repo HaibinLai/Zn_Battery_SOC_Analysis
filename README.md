@@ -11,7 +11,4 @@ Abstract: This article provides a detailed overview of the preparation and testi
 
 ![img.png](img.png)
 
-## Button cell
-
-## Pouch cell
- 
+SOP：SDIM 101 电池制作SOP.md

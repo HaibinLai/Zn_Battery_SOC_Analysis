@@ -8,7 +8,6 @@
 
 本文的网页版可在[https://p.kdocs.cn/s/MFYCKKQ2ABADA](https://p.kdocs.cn/s/MFYCKKQ2ABADA)或 [SDIM 101 电池制作 SOP](http://139.9.215.167/sdim-101-%e7%94%b5%e6%b1%a0%e5%88%b6%e4%bd%9c-sop/) 查看。数据处理部分的源代码可见下方github：[https://github.com/HaibinLai/Zn_Battery_SOC_Analysis.git](https://github.com/HaibinLai/Zn_Battery_SOC_Analysis.git)。
 
-[https://github.com/HaibinLai/Zn_Battery_SOC_Analysis.git](https://github.com/HaibinLai/Zn_Battery_SOC_Analysis.git)
 
 ---
 
