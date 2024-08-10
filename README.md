@@ -12,3 +12,4 @@ Abstract: This article provides a detailed overview of the preparation and testi
 ![img.png](img.png)
 
 SOP：SDIM 101 电池制作SOP.md
+https://haibinlai.github.io/Zn_Battery_SOC_Analysis/SDIM%20101%20%E7%94%B5%E6%B1%A0%E5%88%B6%E4%BD%9CSOP
